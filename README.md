@@ -6,9 +6,13 @@ URL:
 
 Requirement:
 
-Dataset Details:
+#Dataset Details:
 
 ![Insight-ExclusiveArtZoo](Dataset.JPG)
+
+#Progressive GAN:
+
+![Insight-ExclusiveArtZoo](Progressive GAN.png)
 
 
 How to Use the project:
