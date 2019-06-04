@@ -12,7 +12,7 @@ Requirement:
 
 #Progressive GAN:
 
-![ProGAN](Progressive GAN.png)
+![ProGAN](ProgressiveGAN.png)
 
 
 How to Use the project:
