@@ -12,7 +12,7 @@ Requirement:
 
 #Progressive GAN:
 
-![Insight-ExclusiveArtZoo](Progressive GAN.png)
+![ProGAN](Progressive GAN.png)
 
 
 How to Use the project:
