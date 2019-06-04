@@ -6,5 +6,10 @@ URL:
 
 Requirement:
 
+Dataset Details:
+
+![Insight-ExclusiveArtZoo](Dataset.JPG)
+
+
 How to Use the project:
 # Insight-ExclusiveArtZoo
