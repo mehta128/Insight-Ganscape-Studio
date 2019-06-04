@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GANSCAPE</title>
+
+    <!--&lt;!&ndash; Bootstrap core CSS &ndash;&gt; static\vendor\bootstrap\css-->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/business-frontpage.css" rel="stylesheet">
+    <style>@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+#the-final-countdown {
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #5a6268;
+  text-shadow: 1px 1px 5px black;
+  padding: 0rem 0;
+  font-size: 2rem;
+  order: 1px solid #000;
+  text-align:center;
+}
+.displayart img {
+ display:block;
+ margin:10px 0 10px 10px;
+}
+
+.display-marginleft{
+    margin-left:10px !important;
+}
+        
+/*
+    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+    code customized by Azmind.com
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">GANSCAPE STUDIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="bg-secondary py-5 mb-5">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <h1 class="display-4 text-white mt-5 mb-2">Jazz up your life with AI</h1>
+            <p class="lead mb-5 text-white-50">SELECT. BUY. JAZZ UP.</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-8 mb-5">
+            <h2>Story of Jarvis</h2>
+            <hr>
+            <p>Jarvis works in his dark dungeon. And he was working for 85 long years. Now he wants to sell his master artwork. Only GANSCAPE has access to his art.</p>
+  <p>The displayed art is supposed to be sold within 15 minutes. If the artwork is not sold within that time then there is bad luck attached to it and so the art is required to destroyed forever.  </p>
+            <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+        </div>
+
+    </div>
+    <div id="about" class="row" style="text-align:center">
+        <div id="the-final-countdown">
+            <p></p>
+        </div>
+        <br>
+    </div>
+
+
+    <div class="row" style="padding-top:15px;align:center">
+
+        <!-- Top content -->
+        <div class="top-content" style="margin: 0 auto !important;">
+            <div class="container-fluid">
+                <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                            <img src="../static/img/display/portrait_0.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img1">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_1.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img2">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_2.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img3">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_3.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img4">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_4.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img5">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_5.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img6">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_6.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img7">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_7.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img8">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_8.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img8">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_9.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img8">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_10.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img8">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_11.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img8">
+                        </div>
+                        <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                            <img src="../static/img/display/portrait_12.png?nocache=<?php echo time(); ?"
+                                 class="img-fluid mx-auto d-block" alt="img8">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="padding-top:15px">
+
+        <div class="col-md-12 mb-5" style="text-align:center">
+            <div style="margin: 0 auto;">
+                <form action="/updatedisplay" method="POST" >
+                    <button type="submit" class="btn btn-secondary">Update Display</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+     <div style="text-align:center"><h3 style="margin: 0 auto">Hot Art Gallery</h3></div>
+    <div id="Gallery" style="text-align:center;padding-top:15px " class="row">
+
+        <div class="row" style="margin:0 auto">
+            <img src="../static/img/result2.png" style="width:100%"/>
+            <!--            <img src="../static/img/result1.png"> -->
+        </div>
+    </div>
+
+
+    <!-- /.row -->
+    <div id="contact" class="row">
+        <div class="col-md-8 mb-5">
+            <h2>Contact Us</h2>
+            <hr>
+            <address>
+                <strong>GANSCAPE</strong>
+                <br>1197 Bloor St West
+                <br>Toronto, ON
+                <br>
+            </address>
+            <address>
+                <abbr title="Phone">Phone:</abbr>
+                (226) 961-4422
+                <br>
+                <abbr title="Email">Email:</abbr>
+                <a href="mailto:#">kaitavmeht@ymail</a>
+
+            </address>
+        </div>
+    </div>
+</div>
+
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+
+  var g = new Date();
+  var stop = g.getMinutes()+2;
+  setInterval(
+  function time(){
+
+  var d = new Date();
+  if(stop >= d.getMinutes()){
+    stop = stop - 60;
+  }
+  console.log("stop"+stop)
+  var min = 60 - d.getMinutes();
+  console.log("min"+d.getMinutes())
+  if(stop == min){
+    console.log("restarting...")
+    setInterval()
+  }
+
+  if((min + '').length == 1){
+    min = '0' + min;
+  }
+  var sec = 60 - d.getSeconds();
+  if((sec + '').length == 1){
+        sec = '0' + sec;
+  }
+  jQuery('#the-final-countdown p').html(min+':'+sec)
+}, 1000);
+
+/*
+    Carousel
+*/
+$('#carousel-example').on('slide.bs.carousel', function (e) {
+    /*
+        CC 2.0 License Iatek LLC 2018 - Attribution required
+    */
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 5;
+    var totalItems = $('.carousel-item').length;
+ 
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i<it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
+        }
+    }
+});
+
+
+
+</script>
+</body>
+
+
+</html>
+
+
