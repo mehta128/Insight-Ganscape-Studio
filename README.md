@@ -1,8 +1,7 @@
 
 # Welcome to GANSCAPE STUDIO.
+[Live Demo](http://3.15.32.149:8501/)
 
-Live Demo:
-URL: 
 
 ## Requirement:  Flask, 1 GPU, Pytorch, Python 3.6, Matplot, NumPy
 
