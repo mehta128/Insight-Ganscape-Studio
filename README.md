@@ -7,8 +7,14 @@
 
 
 ## Results
-150 epoch- 5th Depth - Batch size 32 
+###150 epoch- 5th Depth - Batch size 32 
+
+
+![Insight-ExclusiveArtZoo](Readme%20Images/ezgif.com-gif-maker.gif)
+
 ![Insight-ExclusiveArtZoo](Readme%20Images/gen_5_150_100.png)
+
+
 
 ## Dataset Details:
 
