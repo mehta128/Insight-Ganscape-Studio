@@ -53,7 +53,6 @@ ProGAN- https://arxiv.org/abs/1710.10196 <br/>
 Animesh Karewar Blog- https://medium.com/@animeshsk3/the-unprecedented-effectiveness-of-progressive-growing-of-gans-37475c88afa3 <br/>
 DCGAN PyTorch- https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html <br/>
 Wiki- https://www.wikiart.org/en/paintings-by-genre/landscape?select=featured#!#filterName:featured,viewType:masonry <br/>
-DCGAN Art- https://github.com/robbiebarrat/art-DCGAN <br/>
 
 This repository is only for educational purpose created during Insight Data Science fellowship.
 
