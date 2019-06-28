@@ -1,6 +1,5 @@
 
 # Welcome to GANSCAPE STUDIO.
-# [Live Demo](http://3.15.32.149:8501/)
 
 ### PROBLEM STATEMENT
 Online sales of antique and unique art were reported at $6 billion and growing by 11% each year. For Upper middle class families to medium scale business, it can be very tricky to buy exclusive and unique art.
