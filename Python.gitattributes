@@ -6,7 +6,7 @@
 *.py     text diff=python
 *.py3    text diff=python
 *.pyw    text diff=python
-*.ipynb  text
+*.ipynb  text linguist-vendored=false
 *.pyx    text diff=python
 
 # Binary files
